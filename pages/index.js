@@ -1,8 +1,20 @@
 import _JSXStyle from "styled-jsx/style";
 import { card, Container, Col, Row, Button } from "react-bootstrap";
-import bgImg from "../img/monstera.jpg";
+import bgImg from "../img/bg-red.jpg";
 import monsteraSq from "../img/monstera-sq.jpg";
 import hoyaSq from "../img/hoya-sq.jpg";
+import TopBar from "../components/TopBar";
+
+const Font = props => (
+  <div className="font">
+    {props.children}
+    <style jsx>{`
+      .font, p, h1 {
+        font-family: 'Darker Grotesque', sans-serif;
+      }
+    `}</style>
+  </div>
+);
 
 const TopBar = props => (
   <div className="TopBar">
@@ -23,7 +35,7 @@ const TopBar = props => (
           />
           <div className="input-group-append">
             <button className="btn btn-outline-secondary" type="button">
-              Button
+              HLEDAT
             </button>
           </div>
         </div>
@@ -32,6 +44,9 @@ const TopBar = props => (
     <style jsx>{`
       .TopBar-img {
         background: url(${bgImg});
+      }
+      p, h1, a {
+        font-family: 'Darker Grotesque', sans-serif);
       }
     `}</style>
   </div>
@@ -63,19 +78,8 @@ const Navigation = props => (
   <div>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="#">
-        <h1 style={{ color: "#335808" }}>GreenSwap</h1>
+        <h1 style={{ color: "#335808", fontFamily: "'Fredericka the Great', cursive" }}>GreenSwap</h1>
       </a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon" />
-      </button>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
@@ -123,9 +127,11 @@ const FlowerOffer = props => (
 function Home() {
   return (
     <Container>
-      <Navigation/>
-      <TopBar />
-      <FlowerOffer />
+      <Font>
+        <Navigation />
+        <TopBar />
+        <FlowerOffer />
+      </Font>
     </Container>
   );
 }
