@@ -25,12 +25,8 @@ const TopBar = props => (
     <div className="TopBar-img">
       <div className="SearchBar">
         <div className="input-group pt-5 pb-5 pl-3 pr-3">
-          <input type="text" className="form-control" aria-label="#" />
-          <div className="input-group-append">
-            <button className="btn btn-outline-secondary" type="button">
-              Lokace
-            </button>
-          </div>
+          <input type="text" className="form-control" aria-label="" placeholder="Jakou rostlinu hledáte ?"/>
+          <input type="text" className="form-control" aria-label="location" placeholder="location"/>
           <div className="input-group-append">
             <button className="btn btn-outline-secondary" type="button">
               Button
@@ -59,11 +55,11 @@ const Flower = props => (
       </div>
       <div className="card-body">
         <h5 className="card-title">{props.flower.name}</h5>
-        <a href="#" className="btn btn-primary">
+        <a href="#" className="btn btn-primary mr-1">
           {props.flower.price}
         </a>
         <a href="#" className="btn btn-primary">
-          Buy
+          Koupit/Vyměnit
         </a>
       </div>
     </div>
@@ -99,7 +95,7 @@ const FlowerOffer = props => (
     {props.children}
     <div className="d-flex row wrap">
       {[
-        { name: "Monstera", price: "300kc" },
+        { image: "../img/monstera-sq.jpg", name: "Monstera", price: "300kc" },
         { name: "Voskovka", price: "Free" }
       ].map((flower, i) => {
         return <Flower key={i} flower={flower} />;
