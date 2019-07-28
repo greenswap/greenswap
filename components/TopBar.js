@@ -1,3 +1,5 @@
+import bgImg from "../img/bg-red.jpg";
+
 const TopBar = props => (
   <div className="TopBar">
     <div className="TopBar-img">
@@ -32,4 +34,6 @@ const TopBar = props => (
       }
     `}</style>
   </div>
-);
+)
+
+export default TopBar
