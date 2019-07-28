@@ -1,5 +1,5 @@
 import _JSXStyle from "styled-jsx/style";
-import { card, Container } from "react-bootstrap";
+import { card, Container, Col, Row, Button } from "react-bootstrap";
 import bgImg from "../img/monstera.jpg";
 import monsteraSq from "../img/monstera-sq.jpg";
 
@@ -25,7 +25,7 @@ const TopBar = props => (
     <div className="TopBar-img">
       <div className="SearchBar">
         <div className="input-group pt-5 pb-5 pl-3 pr-3">
-          <input type="text" class="form-control" aria-label="#" />
+          <input type="text" className="form-control" aria-label="#" />
           <div className="input-group-append">
             <button className="btn btn-outline-secondary" type="button">
               Lokace
@@ -48,25 +48,60 @@ const TopBar = props => (
 );
 
 const Flower = props => (
-  <div className="Flower col-3 mb-4">
-    <img src={monsteraSq} className="img-fluid" />
-    <style jsx>{`
-      .Flower {
-      }
-    `}</style>
+  <div className="col-4">
+    <div className="card">
+      <img className="card-img-top" src={bgImg} alt="Card image cap" />
+      <div className="card-body">
+        <h5 className="card-title">{props.flower.name}</h5>
+        <a href="#" className="btn btn-primary">
+          {props.flower.price}
+        </a>
+        <a href="#" className="btn btn-primary">
+          Buy
+        </a>
+      </div>
+    </div>
   </div>
+
+  // <div className="square col-3 m-4">
+  //   <div className="Flower-text">
+  //     <Row>
+  //       <Col><h3>Kytka Krana</h3></Col>
+  //       <Col><Button>Free</Button></Col>
+  //     </Row>
+  //   </div>
+  //   <style jsx>{`
+  //     .square {
+  //       flex: 1 0 calc(25% - 10px);
+  //       background-image: url(${monsteraSq});
+  //     }
+  //     .square:after{
+  //       content: '';
+  //       display: block;
+  //       padding-bottom: 100%;
+  //     }
+  //     .Flower-text {
+  //       background: green;
+  //       bottom: 0;
+  //     }
+  //   `}</style>
+  // </div>
 );
 
 const FlowerOffer = props => (
   <div className="FlowerOffer pt-4 pb-4">
     {props.children}
-    <div class="d-flex row">
-      {[0, 1, 2, 3, 4, 5].map((key, i) => {
-        return <Flower key={i} />;
+    <div className="d-flex row wrap">
+      {[
+        {name: 'Monstera', price: '300kc'},
+        {name: 'Voskovka', price: 'Free'},
+      ].map((flower, i) => {
+        return <Flower key={i} flower={flower}/>;
       })}
     </div>
     <style jsx>{`
-      .FlowerOffer {
+      .wrap {
+        flex-wrap: wrap;
       }
     `}</style>
   </div>
