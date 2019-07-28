@@ -50,7 +50,13 @@ const TopBar = props => (
 const Flower = props => (
   <div className="col-4">
     <div className="card">
-      <img className="card-img-top" src={bgImg} alt="Card image cap" />
+      <div style={{height: '200px', backgroundImage: `url(${monsteraSq})`, backgroundSize: 'cover'}}>
+        {/* <img
+          className="img-fluid"
+          src={bgImg}
+          alt=""
+        /> */}
+      </div>
       <div className="card-body">
         <h5 className="card-title">{props.flower.name}</h5>
         <a href="#" className="btn btn-primary">
@@ -93,10 +99,10 @@ const FlowerOffer = props => (
     {props.children}
     <div className="d-flex row wrap">
       {[
-        {name: 'Monstera', price: '300kc'},
-        {name: 'Voskovka', price: 'Free'},
+        { name: "Monstera", price: "300kc" },
+        { name: "Voskovka", price: "Free" }
       ].map((flower, i) => {
-        return <Flower key={i} flower={flower}/>;
+        return <Flower key={i} flower={flower} />;
       })}
     </div>
     <style jsx>{`
