@@ -4,13 +4,13 @@ import P from "../components/P";
 const Flower = props => (
   <div className="col-4">
     <div className="card">
-      <div
+      <a href="/FlowerPage"><div
         style={{
           height: "200px",
           backgroundImage: `url(${props.flower.image})`,
           backgroundSize: "cover"
         }}
-      />
+      /></a>
       <div className="card-body">
         <div className="row">
           <div className="col-9">
