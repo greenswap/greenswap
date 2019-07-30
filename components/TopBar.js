@@ -19,7 +19,7 @@ const TopBar = props => (
             placeholder="location"
           />
           <div className="input-group-append">
-            <button className="btn btn-outline-secondary" type="button">
+            <button className="btn btn-secondary" type="button">
               HLEDAT
             </button>
           </div>

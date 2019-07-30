@@ -3,10 +3,10 @@ const BtnGreen = props => (
     {props.children}
     <style jsx>{`
       .BtnGreen {
-        color: green;
+        color: #406052;
         background-color: transparent;
-        border-color: green;
-        padding: 0.100rem 0.3rem!important;
+        border-color: #406052;
+        padding: 0.400rem 2rem!important;
       }
     `}</style>
   </div>

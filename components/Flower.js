@@ -21,7 +21,7 @@ const Flower = props => (
             <h5 className="card-title">{props.flower.name}</h5>
           </div>
           <div className="col-3">
-            <P>{props.flower.price}</P>
+            <P><b>{props.flower.price}</b></P>
           </div>
         </div>
         <BtnGreen>
