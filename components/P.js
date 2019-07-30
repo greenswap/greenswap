@@ -1,4 +1,3 @@
-
 const Font = props => (
     <div className="p">
       {props.children}
@@ -9,5 +8,5 @@ const Font = props => (
       `}</style>
     </div>
   )
-  
+
   export default Font

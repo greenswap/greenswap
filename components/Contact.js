@@ -7,8 +7,7 @@ const Contact = props => (
       if (props.email) {
         return (
           <>
-            <P>email: </P>
-            <a href="mailto:{props.email}">{props.email}</a>
+            <h3><a href="mailto:{props.email}">{props.email}</a></h3>
           </>
         );
       }
@@ -18,8 +17,7 @@ const Contact = props => (
       if (props.facebook) {
         return (
           <>
-            <P>FaceBook</P>
-            <a href="{props.facebook}">{props.facebookName}</a>
+            <h3><a href="{props.facebook}">{props.facebookName}</a></h3>
           </>
         );
       }

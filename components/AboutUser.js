@@ -16,7 +16,7 @@ const AboutUser = props => (
         <P>{props.AboutUser}</P>
         <div className="row pt-4">
           <div className="col-6">
-            <Contact header="Kontaktujte mě zejména na" email="zuz@zuzjes.com" facebook="https://www.facebook.com/zuzka.jeschke" facebookName="Zuzka Jeschke" />
+            <Contact header="Kontaktujte mě zejména na" email="zuz@zuzjes.com" facebook="" facebookName="" />
           </div>
           <div className="col-6">
             <h3>Zde mě také můžete kontaktovat</h3>

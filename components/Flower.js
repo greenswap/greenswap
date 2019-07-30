@@ -1,3 +1,6 @@
+import BtnGreen from "../components/BtnGreen";
+import P from "../components/P";
+
 const Flower = props => (
   <div className="col-4">
     <div className="card">
@@ -9,16 +12,25 @@ const Flower = props => (
         }}
       />
       <div className="card-body">
-        <h5 className="card-title">{props.flower.name}</h5>
-        <a href="#" className="btn btn-primary mr-1">
-          {props.flower.price}
-        </a>
-        <a href="#" className="btn btn-primary">
-          Koupit/Vyměnit
-        </a>
+        <div className="row">
+          <div className="col-9">
+            <h5 className="card-title">{props.flower.name}</h5>
+          </div>
+          <div className="col-3"><P>{props.flower.price}</P></div>
+        </div>
+        <BtnGreen>
+          <a href="#" className="btn">
+            Koupím
+          </a>
+        </BtnGreen>
+        <BtnGreen>
+          <a href="#" className="btn">
+            Swapnu
+          </a>
+        </BtnGreen>
       </div>
     </div>
   </div>
-)
+);
 
-export default Flower
+export default Flower;
