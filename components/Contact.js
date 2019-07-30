@@ -1,7 +1,6 @@
-import zuz from "../img/zuz.jpg";
 import fb from "../img/icons/facebook.svg";
 import instagram from "../img/icons/instagram.svg";
-import P from "./P";
+import A from "../components/A";
 
 const Contact = props => (
   <div className="Contact">
@@ -13,7 +12,7 @@ const Contact = props => (
             return (
               <>
                 <h3>
-                  <a href="mailto:{props.email}">{props.email}</a>
+                  <A href="mailto:{props.email}">{props.email}</A>
                 </h3>
               </>
             );
@@ -24,7 +23,7 @@ const Contact = props => (
             return (
               <>
                 <h3>
-                  <a href="{props.facebook}">{props.facebookName}</a>
+                  <A href="{props.facebook}">{props.facebookName}</A>
                 </h3>
               </>
             );

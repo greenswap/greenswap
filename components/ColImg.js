@@ -1,4 +1,4 @@
-import P from "./P";
+import P from "../components/P";
 const ColImg = props => (
   <div className="ColImg pt-4 pb-4">
     <h2>{props.Name}</h2>

@@ -7,7 +7,11 @@ import Navigation from "../components/Navigation";
 import FlowerOffer from "../components/FlowerOffer";
 import ColImg from "../components/ColImg";
 import P from "../components/P";
-import hoyaSq from "../img/hoya-Sq.jpg";
+import monsteraSq from "../img/plants/monstera-sq.jpg";
+import hoyaSq from "../img/plants/hoya-sq.jpg";
+import ficus from "../img/plants/ficus.jpg";
+import eucalyptus from "../img/plants/eucalyptus.jpg";
+import succulent from "../img/plants/succulent.jpg";
 
 function Home() {
   let flower = { image: hoyaSq, name: "Voskovka", price: "Free" };

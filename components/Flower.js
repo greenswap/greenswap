@@ -1,9 +1,10 @@
 import BtnGreen from "./BtnGreen";
 import P from "../components/P";
+import A from "../components/A";
 import Card from "../components/Card";
 
 const Flower = props => (
-  <div className="col-4">
+  <div className="col-4 p-1">
     <Card>
       <a href="/FlowerPage">
         <div
@@ -24,14 +25,14 @@ const Flower = props => (
           </div>
         </div>
         <BtnGreen>
-          <a href="#" className="btn">
+          <A href="#" className="btn">
             Koupím
-          </a>
+          </A>
         </BtnGreen>
         <BtnGreen>
-          <a href="#" className="btn">
+          <A href="#" className="btn">
             Swapnu
-          </a>
+          </A>
         </BtnGreen>
       </div>
     </Card>
