@@ -4,7 +4,7 @@ const TopBar = props => (
   <div className="TopBar">
     <div className="TopBar-img">
       <div className="SearchBar">
-        <div className="input-group pt-5 pb-5 pl-3 pr-3">
+        <div className="input-group pt-5 mt-3 mb-3 pb-5 pl-3 pr-3">
           <input
             type="text"
             className="form-control"
