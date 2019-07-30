@@ -1,4 +1,4 @@
-import Flower from "../components/Flower";
+import Flower from "./Flower";
 import monsteraSq from "../img/monstera-sq.jpg";
 import hoyaSq from "../img/hoya-sq.jpg";
 

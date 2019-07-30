@@ -1,7 +1,7 @@
 import zuz from "../img/zuz.jpg";
 import fb from "../img/icons/facebook.svg";
 import instagram from "../img/icons/instagram.svg";
-import P from "../components/P";
+import P from "./P";
 
 const Contact = props => (
   <div className="Contact">
