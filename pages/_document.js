@@ -27,8 +27,8 @@ class CourseLandingDocument extends Document {
         <Head>
           <meta charSet="utf-8"/>
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-          <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet"/>
-          <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great&display=swap" rel="stylesheet"/>
+          {/* <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap" rel="stylesheet"/> */}
+          <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Special+Elite&display=swap" rel="stylesheet"></link>
         </Head>
         <body>
           <DevelopmentBar />

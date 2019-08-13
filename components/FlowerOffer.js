@@ -10,8 +10,8 @@ const FlowerOffer = props => (
     {props.children}
     <div className="d-flex row wrap">
       {[
-        { image: monsteraSq, name: "Monstera", price: "300kc" },
-        { image: hoyaSq, name: "Voskovka", price: "Free" },
+        { image: monsteraSq, name: "Monstera stredni", nameLatin: "Monstera deliciosa", price: "300kc" },
+        { image: hoyaSq, name: "Voskovka", nameLatin: "Hoya", price: "Free" },
         { image: succulent, name: "Succulent", price: "30kc" },
         { image: ficus, name: "Ficus", price: "Free" },
         { image: eucalyptus, name: "Eucalyptus", price: "50kc" }

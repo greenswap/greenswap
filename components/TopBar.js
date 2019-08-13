@@ -16,7 +16,7 @@ const TopBar = props => (
             type="text"
             className="form-control"
             aria-label="location"
-            placeholder="location"
+            placeholder="Zatím pouze po Praze"
           />
           <div className="input-group-append">
             <button className="btn btn-secondary" type="button">
@@ -31,7 +31,7 @@ const TopBar = props => (
         background: url(${bgImg});
       }
       p, h1, a, .A {
-        font-family: 'Darker Grotesque', sans-serif);
+        font-family: 'Darker Grotesque', sans-serif;
       }
       .pt-8 {
         padding-top: 5rem !important;

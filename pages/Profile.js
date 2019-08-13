@@ -23,9 +23,8 @@ function Home() {
           nejvice me zajimaji previsle kvetiny ale i sukulenty. Jmenuji se Zuzka
           a jsem veliky kytkomil, nejvice me zajimaji previsle kvetiny ale i
           sukulenty. Jmenuji se Zuzka a jsem veliky kytkomil, nejvice me
-          zajimaji previsle kvetiny ale i sukulenty.
-
-          Pohybuji se kolem Ceskomoravske, kolem Muzea, Holesovic a Michle."
+          zajimaji previsle kvetiny ale i sukulenty."
+          Location="Pohybuji se kolem Ceskomoravske, kolem Muzea, Holesovic a Michle."
         >
           <Contact
           header="Kontaktujte mě zejména na"

@@ -19,6 +19,7 @@ const Flower = props => (
         <div className="row">
           <div className="col-9">
             <h5 className="card-title">{props.flower.name}</h5>
+            <p>({props.flower.nameLatin})</p>
           </div>
           <div className="col-3">
             <P><b>{props.flower.price}</b></P>

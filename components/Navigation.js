@@ -2,7 +2,7 @@ const Navigation = props => (
   <div>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <a className="navbar-brand" href="/">
-        <h1 style={{ color: "#335808", fontFamily: "'Fredericka the Great', cursive" }}>GreenSwap</h1>
+        <h1 style={{ color: "#335808", fontFamily: "'Special Elite', cursive" }}>GreenSwap</h1>
       </a>
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -12,11 +12,11 @@ const Navigation = props => (
               DOMŮ <span className="sr-only">(current)</span>
             </a>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a className="nav-link" href="3">
               TIPY/TRIKY
             </a>
-          </li>
+          </li> */}
 
           <li className="nav-item">
             <a className="nav-link" href="/profile">
@@ -25,8 +25,12 @@ const Navigation = props => (
           </li>
         </ul>
       </div>
+      <style jsx>{`
+      .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem!important;
+        padding-left: 1.5rem!important;
+    `}</style>
     </nav>
   </div>
 )
-
 export default Navigation
