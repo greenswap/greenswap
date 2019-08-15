@@ -10,6 +10,9 @@ const TopBar = props => (
             Platforma je urcena pro zjednodusenou vymenu kytek pro vsechny
             kytkomily!
           </P>
+          <P color="white">
+            Ps.: Výměna zatim jen po Praze, ale maka se na tom1
+          </P>
           <div className="input-group">
             <input
               type="text"
