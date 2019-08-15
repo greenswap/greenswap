@@ -14,12 +14,12 @@ const PersonalIntro = props => (
   <Container className="border">
     <Font>
       <ColImg
-        // fotka s kytkou me
+        // moje fotka s kytkou
         Photo={zuz} height="110" width="150"
-        // ja
+        // me jmeno
         Name="Zuzka Jeschke"
         // kde se mi vymena hodi nejvice
-        Location="Pohybuji se kolem Ceskomoravske, kolem Muzea, Holesovic a Michle."
+        Location="Pohybuji se kolem Českomoravské, kolem Muzea, Holešovic a Michle."
       >
         {/* kontaktujte me prosim predne na: */}
         <Contact
@@ -32,8 +32,8 @@ const PersonalIntro = props => (
     </Font>
   </Container>
   <style jsx>{`
-    .border {
-      border: solid 1px grey;
+    .border-green {
+      border: 1px solid #175E45 !important;
     }
   `}</style>
   </>
