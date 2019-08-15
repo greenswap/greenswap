@@ -1,9 +1,9 @@
 import BtnGreen from "./BtnGreen";
-import P from "../components/P";
-import A from "../components/A";
-import Card from "../components/Card";
+import P from "./P";
+import A from "./A";
+import Card from "./Card";
 
-const Flower = props => (
+const FlowerInfo = props => (
   <div className="col-4 p-1">
     <Card>
       <a href="/FlowerPage">
@@ -40,4 +40,4 @@ const Flower = props => (
   </div>
 );
 
-export default Flower;
+export default FlowerInfo;

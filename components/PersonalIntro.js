@@ -1,17 +1,13 @@
 import _JSXStyle from "styled-jsx/style";
 import { card, Container, Col, Row, Button } from "react-bootstrap";
-import TopBar from "./TopBar";
 import Font from "./Font";
-
-import Navigation from "./Navigation";
-import FlowerOffer from "./FlowerOffer";
 import ColImg from "./ColImg";
 import Contact from "./Contact";
 import zuz from "../img/zuz.jpg";
 
 const PersonalIntro = props => (
   <>
-  <Container className="border">
+  <Container className="border" id="PersonaIntro">
     <Font>
       <ColImg
         // moje fotka s kytkou

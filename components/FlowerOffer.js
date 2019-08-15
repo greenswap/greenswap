@@ -1,4 +1,4 @@
-import Flower from "./Flower";
+import Flower from "./FlowerInfo";
 import monsteraSq from "../img/plants/monstera-sq.jpg";
 import hoyaSq from "../img/plants/hoya-sq.jpg";
 import ficus from "../img/plants/ficus.jpg";

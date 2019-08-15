@@ -11,7 +11,7 @@ import zuz from "../img/zuz.jpg";
 
 function Home() {
   return (
-    <Container>
+    <>
       <Font>
         <Navigation />
         <TopBar />
@@ -38,7 +38,7 @@ function Home() {
         <h3>Na výměnu nabízím</h3>
         <FlowerOffer />
       </Font>
-    </Container>
+    </>
   );
 }
 

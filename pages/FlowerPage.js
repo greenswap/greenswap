@@ -1,5 +1,4 @@
 import _JSXStyle from "styled-jsx/style";
-import { card, Container, Col, Row, Button } from "react-bootstrap";
 import TopBar from "../components/TopBar";
 import Font from "../components/Font";
 import ReactMarkdown from "react-markdown";
@@ -8,9 +7,6 @@ import FlowerOffer from "../components/FlowerOffer";
 import ColImg from "../components/ColImg";
 import PersonalIntro from "../components/PersonalIntro";
 import hoyaSq from "../img/plants/hoya-sq.jpg";
-import Contact from "../components/Contact";
-import eucalyptus from "../img/plants/eucalyptus.jpg";
-import succulent from "../img/plants/succulent.jpg";
 
 function Home() {
   let flower = { image: hoyaSq, name: "Voskovka", nameLatin: "Hoya", price: "Free", description: `
@@ -26,7 +22,7 @@ function Home() {
 
                };
   return (
-    <Container>
+    <>
       <Font>
         <Navigation />
         <TopBar />
@@ -40,11 +36,11 @@ function Home() {
             source={flower.swipe}
           />
         </ColImg>
-        <PersonalIntro></PersonalIntro>
+        <PersonalIntro/>
         <h3>Podobne kvetiny</h3>
         <FlowerOffer />
       </Font>
-    </Container>
+    </>
   );
 }
 
