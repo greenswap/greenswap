@@ -17,12 +17,12 @@ const TopBar = props => (
               aria-label=""
               placeholder="Jakou rostlinu hledáte ?"
             />
-            <input
+            {/* <input
               type="text"
               className="form-control"
               aria-label="location"
               placeholder="Zatím pouze po Praze"
-            />
+            /> */}
             <div className="input-group-append">
               <button className="btn btn-secondary" type="button">
                 HLEDAT
@@ -34,7 +34,7 @@ const TopBar = props => (
     </div>
     <style jsx>{`
       .TopBar-img {
-        background: url(${bgImg});
+        background-color: #81AE9C;
       }
       p,
       h1,
@@ -44,6 +44,9 @@ const TopBar = props => (
       }
       .pb-8 {
         padding-bottom: 5rem !important;
+      }
+      .input-group {
+        width: 50%;
       }
     `}</style>
   </div>
