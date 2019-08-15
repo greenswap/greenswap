@@ -1,9 +1,9 @@
 const Font = props => (
-    <div className="p">
+    <div className="p" style={{color: props.color}}>
       {props.children}
       <style jsx>{`
         .p, p {
-          font-size: 20px;
+          font-size: 22px;
         }
       `}</style>
     </div>

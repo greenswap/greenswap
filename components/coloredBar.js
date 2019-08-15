@@ -1,6 +1,6 @@
 import bgImg from "../img/plants/window-sill.jpg";
 
-const coloredBar = props => {
+const ColoredBar = props => {
   return (
     <div className="coloredBar">
       {props.children}
@@ -13,4 +13,4 @@ const coloredBar = props => {
   );
 };
 
-export default coloredBar;
+export default ColoredBar;
