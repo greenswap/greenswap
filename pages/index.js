@@ -45,20 +45,6 @@ Pokud máte nějaké konstruktivní dotazy/připominky prosím napištena [zuz@z
           `}/>}
           >
           </ThreeCol>
-          {/*
-            <div class="col-4">
-              <h4>Jsem na těchto sítích</h4>
-              <a href=""></a><br/>
-              <a href=""></a><br/>
-              <a href=""></a><br/>
-              <a href=""></a>
-            </div>
-            <div className="col-4">
-              <h4>Zeptejte se!</h4>
-              Pokud máte nějaké konstruktivní dotazy/pripominky prosím napište
-              na <a href="mailto:zuz@zuzjes.com"></a>
-            </div>
-          </div> */}
         </Container>
       </ColoredBar>
     </>
