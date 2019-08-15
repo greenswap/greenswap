@@ -9,6 +9,7 @@ const ColImg = props => (
       </div>
       <div className="col-9">
         <P>{props.AboutUser}</P>
+        <P>{props.Location}</P>
         {props.children}
       </div>
     </div>
