@@ -4,6 +4,8 @@ import { card, Container, Col, Row, Button } from "react-bootstrap";
 import ColoredBar from "../components/ColoredBar";
 import ThreeCol from "../components/ThreeCol";
 import Markdown from "../components/Markdown";
+import TopBar from "../components/TopBar";
+import Navigation from "../components/Navigation";
 
 let DevelopmentBar = () => {
   if (process.env.NODE_ENV == "development") {
@@ -43,6 +45,8 @@ class CourseLandingDocument extends Document {
         </Head>
         <body>
           <DevelopmentBar />
+          <Navigation />
+          <TopBar />
           <Container>
             <Main />
           </Container>

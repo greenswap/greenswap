@@ -11,7 +11,7 @@ const TopBar = props => (
             kytkomily!
           </P>
           <P color="white">
-            Ps.: Výměna zatim jen po Praze, ale maka se na tom1
+            Ps.: Výměna zatim jen po Praze, ale maka se na tom!
           </P>
           <div className="input-group">
             <input
