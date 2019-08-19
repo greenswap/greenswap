@@ -24,8 +24,8 @@ function Home() {
   return (
     <>
       <Font>
-        <Navigation />
-        <TopBar />
+        {/* <Navigation />
+        <TopBar /> */}
         <h3 className="card-title">{flower.name} - {flower.nameLatin} ({flower.price})</h3>
         {/* <P></P> */}
         <ColImg Photo={flower.image}>

@@ -50,9 +50,12 @@ class CourseLandingDocument extends Document {
           <Container>
             <Main />
           </Container>
-          <ColoredBar color="#82af9c">
+          <ColoredBar backgroundColor="#82af9c"
+          >
             <Container>
               <ThreeCol
+              pColor="white"
+              aColor="#243F49"
                 col1={
                   <Markdown
                     source={`

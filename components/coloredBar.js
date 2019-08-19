@@ -6,7 +6,13 @@ const ColoredBar = props => {
       {props.children}
       <style jsx>{`
       .coloredBar {
-        background-color: ${props.color};
+        background-color: ${props.backgroundColor};
+      }
+      .p {
+        color: ${props.pColor}
+      }
+      a {
+        color: ${props.aColor}
       }
     `}</style>
     </div>

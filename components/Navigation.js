@@ -6,7 +6,7 @@ const Navigation = props => (
       <Container>
         <a className="navbar-brand" href="/">
           <h1
-            style={{ color: "#335808", fontFamily: "'Special Elite', cursive" }}
+            style={{ color: "#243F49", fontFamily: "'Special Elite', cursive" }}
           >
             GreenSwap
           </h1>

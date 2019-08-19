@@ -7,8 +7,6 @@ function Home() {
   return (
     <>
       <Font>
-
-
         <FlowerOffer />
       </Font>
     </>
