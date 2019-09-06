@@ -15,7 +15,7 @@ const ColImg = props => (
     </div>
     <style jsx>{`
       .color-green {
-        color: green;
+        color: #406052;
       }
     `}</style>
   </div>
