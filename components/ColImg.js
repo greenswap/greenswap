@@ -1,7 +1,7 @@
 import P from "../components/P";
 const ColImg = props => (
   <div className="ColImg pt-2 pb-4">
-    <h2><a href="/profile">{props.Name}</a></h2>
+    <h2><a href="/profile" className="color-green">{props.Name}</a></h2>
 
     <div className="row">
       <div className="col-3">
@@ -13,6 +13,11 @@ const ColImg = props => (
         {props.children}
       </div>
     </div>
+    <style jsx>{`
+      .color-green {
+        color: green;
+      }
+    `}</style>
   </div>
 );
 
