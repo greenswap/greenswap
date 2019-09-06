@@ -6,28 +6,23 @@ const TopBar = props => (
     <div className="TopBar-img">
       <div className="SearchBar">
         <div className="container pt-5 pb-8">
-          <P color="white">
-            Platforma je urcena pro zjednodusenou vymenu kytek pro vsechny
-            kytkomily!
-          </P>
-          <P color="white">
-            Ps.: Výměna zatim jen po Praze, ale maka se na tom!
-          </P>
-          <div className="input-group">
+          {/* <div className="pb-3"> */}
+            <P color="white">
+              Platforma je urcena pro zjednodusenou vymenu kytek pro vsechny
+              kytkomily!
+              <br />
+              Ps.: Výměna zatim jen po Praze, ale maka se na tom!
+            </P>
+          {/* </div> */}
+          <div className="input-group pt-4">
             <input
               type="text"
               className="form-control"
               aria-label=""
               placeholder="Jakou rostlinu hledáte ?"
             />
-            {/* <input
-              type="text"
-              className="form-control"
-              aria-label="location"
-              placeholder="Zatím pouze po Praze"
-            /> */}
             <div className="input-group-append">
-              <button className="btn btn-secondary" type="button">
+              <button className="btn btn-green" type="button">
                 HLEDAT
               </button>
             </div>
@@ -37,7 +32,7 @@ const TopBar = props => (
     </div>
     <style jsx>{`
       .TopBar-img {
-        background-color: #81AE9C;
+        background-color: #81ae9c;
       }
       p,
       h1,
@@ -50,6 +45,10 @@ const TopBar = props => (
       }
       .input-group {
         width: 50%;
+      }
+      .btn-green {
+        background-color: #243F49;
+        color: white;
       }
     `}</style>
   </div>

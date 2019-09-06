@@ -13,8 +13,6 @@ function Home() {
   return (
     <>
       <Font>
-        <Navigation />
-        <TopBar />
         <ColImg
           Photo={zuz}
           Name="Zuzka Jeschke"
